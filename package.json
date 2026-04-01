@@ -1,0 +1,40 @@
+{
+  "name": "@reactfast/tables",
+  "version": "0.1.0",
+  "description": "Declarative data tables for React — columns, actions, pagination, sorting, search",
+  "main": "dist/tables.cjs",
+  "module": "dist/tables.es.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "release:patch": "npm version patch --no-git-tag-version && pnpm build && npm publish --access public",
+    "release:minor": "npm version minor --no-git-tag-version && pnpm build && npm publish --access public",
+    "release:major": "npm version major --no-git-tag-version && pnpm build && npm publish --access public"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.0.12"
+  },
+  "keywords": [
+    "react",
+    "table",
+    "data-table",
+    "reactfast",
+    "tailwind"
+  ],
+  "author": "Jonathon McClendon",
+  "license": "MIT"
+}
